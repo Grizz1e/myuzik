@@ -1,0 +1,17 @@
+body {
+    background: url('/images/login_bg_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact img{
+    aspect-ratio: 1;
+   width: 200px;
+   height: 200px;
+   border-radius: 100px;
+}
+#contact{
+    display: flex;
+    justify-content: space-evenly;
+}

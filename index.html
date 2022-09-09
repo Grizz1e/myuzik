@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+        .cont {
+            background: url('/images/login_bg_1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            font-family: 'Ms Madi', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="fixed top-0 bg-gray-800 h-fit w-full flex justify-between text-white items-center">
+        <div class="p-2">
+            <a href="/index.html">
+                <img class="h-20 aspect-square rounded-full" src="/images/contact_1.jpg" alt="" srcset="">
+            </a>
+        </div>
+        <div class="text-3xl justify-around">
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/index.html">Home</a></li>
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/contact.html">Contact</a>
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/artist.html">Musicians</a>
+            <a class="px-5 py-2 rounded-3xl mr-10 ease-in-out bg-blue-400 hover:bg-blue-300"
+                href="login.html">Donate</a>
+
+        </div>
+
+    </nav>
+    <div class="cont overflow-hidden flex justify-center pt-80">
+        <h1 class="mx-auto text-white text-9xl font-bold">
+            "Music Connects People"
+        </h1>
+    </div>
+    <footer class="fixed bottom-0 bg-gray-800 text-white flex justify-center items-center py-2 h-fit w-full">
+        <h1>©️ 2022 - <span id="year"></span> Mookshya Productions </h1>
+    </footer>
+</body>
+
+</html>

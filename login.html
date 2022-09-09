@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com/3.1.8"></script>
+    <link rel="stylesheet" href="/css/login.css">
+
+</head>
+
+<body>
+    <nav class="bg-gray-800 h-fit w-full flex justify-between text-white items-center">
+        <div class="p-2">
+            <a href="/index.html">
+                <img class="h-20 aspect-square rounded-full" src="/images/contact_1.jpg" alt="" srcset="">
+            </a>
+        </div>
+        <div class="text-3xl justify-around">
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/index.html">Home</a></li>
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/contact.html">Contact</a>
+            <a class="px-5 hover:text-amber-200 ease-in-out" href="/artist.html">Musicians</a>
+            <a class="px-5 py-2 rounded-3xl mr-10 ease-in-out bg-blue-400 hover:bg-blue-300"
+                href="login.html">Donate</a>
+
+        </div>
+
+    </nav>
+    <div class="w-full py-10">
+        <div class="login-box glass w-2/6 mx-auto text-black px-14 pt-14 pb-5 font-bold">
+            <h1 class="text-center text-3xl mb-10 w-fit mx-auto p-2">Donate Us</h1>
+            <h6 class="text-red-600 italic error-msg"></h6>
+            <form action="/index.html" class="flex flex-col" onsubmit="return validate()">
+                <label class="text-3xl p-1 w-fit" for="fullname">Full
+                    Name:</label><br>
+                <input class="glass h-12 my-1 text-black placeholder-slate-500 px-5" type="text" name="fullname"
+                    id="fullname" placeholder="John Doe" required><br>
+                <label class="text-3xl p-1 w-fit" for="amount">Amount:</label><br>
+
+                <input class="glass h-12 my-1 text-black placeholder-slate-500 px-5" type="number" name="amount"
+                    id="amount" placeholder="$30" required><br>
+                <hr class="w-20 mx-auto border-t-8 border-x-0 my-3 border-dotted">
+                <h1 class="text-center text-3xl w-fit mx-auto">Sign Up</h1>
+                <hr class="w-20 mx-auto border-t-8 border-x-0 my-3 border-dotted">
+                <label class="text-3xl p-1 w-fit" for="email">Email
+                    Address:</label><br>
+                <input class="glass h-12 my-1 text-black px-5 placeholder-slate-500" placeholder="email@example.com"
+                    type="email" name="email" id="email" required><br>
+                <label class="text-3xl p-1 w-fit" for="password">Password:</label><br>
+                <input class="glass h-12 my-1 text-black px-5 placeholder-slate-500" placeholder="Don't put 1234"
+                    type="password" name="" id="password" required>
+                <p class="mt-2"><input type="checkbox" name="checkbox1" id="notify-me" checked> Subscribe me to the
+                    weekly newsletter</p>
+                <p class="mt-2"><input type="checkbox" name="checkbox2" id="tos" required> I agree to all the Terms &
+                    Conditions</p>
+                <button type="submit" class="glass text-3xl bg-blue-500 mt-5 py-5 text-white">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-gray-800 text-white flex justify-center items-center py-2 h-fit w-full">
+        <h1>©️ 2022 - <span id="year"></span> Mookshya Productions </h1>
+    </footer>
+    <script src="/script/login.js" defer></script>
+</body>
+
+</html>
